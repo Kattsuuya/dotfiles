@@ -120,8 +120,3 @@ fi
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-PATH=/home/s1611387/.pyenv/shims:/home/s1611387/.pyenv/bin:/home/s1611387/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/s1611387/Thesis/raspi_kernel/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin
-export PATH="~/qemu-4.1.1/build:$PATH"
-export PATH="~/qemu-4.1.1/build/arm-softmmu:$PATH"
-export PATH="~/qemu-4.1.1/build/aarch64-softmmu:$PATH"
-export PATH="/usr/local/texlive/2019/bin/x86_64-linux:$PATH"
