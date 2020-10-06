@@ -8,16 +8,6 @@ if [ "${BASH-no}" != "no" ]; then
 	[ -r /etc/bashrc ] && . /etc/bashrc
 fi
 export HISTCONTROL=ignoredups
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-alias x='exit'
-alias ls='ls -G'
-alias ll='ls -la'
-alias lsold='ls -lrt'
-alias lsnew='ls -lt'
-alias ls='exa'
 
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
@@ -26,10 +16,6 @@ export PATH="/usr/local/opt/qemu/bin:$PATH"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 
 export SOURCEKIT_TOOLCHAIN_PATH="/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2019-08-05-a.xctoolchain/usr/bin/swift"
-
-if [ -f ~/.bashrc ] ; then
-    . ~/.bashrc
-fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
@@ -41,16 +27,7 @@ if [[ -d ~/.rbenv  ]] ; then
     eval "$(rbenv init -)"
 fi
 
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-# ~/.profile: executed by the command interpreter for login shells.
-# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
-# exists.
-# see /usr/share/doc/bash/examples/startup-files for examples.
-# the files are located in the bash-doc package.
-
-# the default umask is set in /etc/profile; for setting the umask
-# for ssh logins, install and configure the libpam-umask package.
-#umask 022
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -70,5 +47,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+export HOMEBREW_NO_AUTO_UPDATE=1
 
-export PATH="$HOME/.cargo/bin:$PATH"
+# pyenvの設定
+if [ -d "$HOME/.pyenv" ] ; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+fi

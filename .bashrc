@@ -116,11 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-export HOMEBREW_NO_AUTO_UPDATE=1
+# bashでコマンドのオプションを補完する
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-
