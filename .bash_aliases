@@ -1,2 +1,5 @@
 alias x='exit'
 alias lsold='ls -lrt'
+alias x='exit'
+alias lsold='ls -lrt'
+alias ls='exa'
