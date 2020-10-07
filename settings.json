@@ -151,4 +151,73 @@
       "editor.tabSize": 2
     },
     "latex-workshop.view.pdf.viewer": "browser",
+    "workbench.colorTheme": "Monokai",
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=E265, E701, E702, E703, E704, W293, W504",
+        "--max-line-length=150",
+        "--max-complexity=20"
+    ],
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--aggressive",
+    ],
+    "python.formatting.provider": "autopep8",
+    "autoDocstring.docstringFormat": "numpy",
+    "window.zoomLevel": 0,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "all_compile_platex_without_bib",
+            "tools": [
+                "platex",
+                "platex",
+                "dvipdfmx"
+            ]
+        },
+        {
+            "name": "all_compile_platex_with_bib",
+            "tools": [
+                "platex",
+                "bibtex",
+                "platex",
+                "platex",
+                "dvipdfmx"
+            ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "platex",
+            "command": "platex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "dvipdfmx",
+            "command": "dvipdfmx",
+            "args": [
+                "%DOCFILE%.dvi"
+            ]
+        }
+    ],
+    "latex-workshop.latex.autoBuild.run": "never",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "todo-tree.tree.showScanModeButton": false,
+    "C_Cpp.clang_format_style": "BasedOnStyle: Visual Studio, BreakBeforeBraces: Attach",
 }
