@@ -6,6 +6,31 @@ helpmsg() {
     command echo ""
 }
 
+cp_vscode_settings() {
+    local dotdir=$(dirname ${script_dir})
+    local dst="$dotdir/settings.json"
+    if [ "$(uname)" == 'Darwin' ]; then
+        local OS='Mac'
+        local src="$HOME/Library/Application Support/Code/User/settings.json"
+    elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+        local OS='Linux'
+        local src="$HOME/.config/Code/User/settings.json"
+    elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then
+        local OS='Cygwin'
+        local src="%APPDATA%/Code/User/settings.json"
+    else
+        echo "Your platform ($(uname -a)) is not supported."
+        exit 1
+    fi
+    if [[ -L "$src" ]]; then
+        command rm -f "$src"
+    fi
+    if [[ -e "$src" ]]; then
+        command mv "$src" "${src}_bk"
+    fi
+    command ln -snf $dst "$src"
+}
+
 link_to_homedir() {
     command echo "backup old dotfiles..."
     if [ ! -d "$HOME/.dotbackup" ]; then
@@ -25,6 +50,7 @@ link_to_homedir() {
             fi
                 command ln -snf $f $HOME
         done
+        cp_vscode_settings
     else
         command echo "same install src dest"
     fi
