@@ -15,9 +15,11 @@ cp_vscode_settings() {
     elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
         local OS='Linux'
         local src="$HOME/.config/Code/User/settings.json"
-    elif [ "$(expr substr $(uname -s) 1 10)" == 'MINGW32_NT' ]; then
+    elif [ "$(expr substr $(uname -s) 1 9)" == 'CYGWIN_NT' ]; then
         local OS='Cygwin'
-        local src="%APPDATA%/Code/User/settings.json"
+        local src="$APPDATA/Code/User/settings.json"
+        # cygwinでlnコマンドが失敗する
+        # 現状は，cmd.exeを管理者権限で実行し，mklinkコマンドでシンボリックリンクを貼っている
     else
         echo "Your platform ($(uname -a)) is not supported."
         exit 1
