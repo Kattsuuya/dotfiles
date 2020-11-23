@@ -20,6 +20,8 @@ cp_vscode_settings() {
         local src="$APPDATA/Code/User/settings.json"
         # cygwinでlnコマンドが失敗する
         # 現状は，cmd.exeを管理者権限で実行し，mklinkコマンドでシンボリックリンクを貼っている
+        # unlink C:\Users\angel\AppData\Roaming\Code\User\settings.json
+        # mklink C:\Users\angel\AppData\Roaming\Code\User\settings.json C:\cygwin64\home\angel\dotfiles\settings.json
     else
         echo "Your platform ($(uname -a)) is not supported."
         exit 1
