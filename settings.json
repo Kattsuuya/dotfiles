@@ -16,9 +16,7 @@
   "[markdown]": {
     "editor.tabSize": 2
   },
-  "[plaintext]": {
-    "files.encoding": "shiftjis"
-  },
+  "[plaintext]": {},
   "[python]": {
     "editor.insertSpaces": true,
     "files.encoding": "utf8",
@@ -31,7 +29,9 @@
   "[typescript]": {
     "editor.tabSize": 2
   },
-
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
   // 設定: LaTeX Workshop
   // LaTeX Workshop ではビルド設定を「Tool」と「Recipe」という2つで考える
   //   Tool: 実行される1つのコマンド。コマンド (command) と引数 (args) で構成される
@@ -131,7 +131,7 @@
   // 時間がかかってしまい、ビルドプログラムの負荷がエディタに影響するため、無効化しておく。
   "latex-workshop.latex.autoBuild.run": "never",
 
-  "C_Cpp.clang_format_style": "BasedOnStyle: Visual Studio, BreakBeforeBraces: Attach",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: Microsoft, BreakBeforeBraces: Attach }",
   "autoDocstring.docstringFormat": "numpy",
   "breadcrumbs.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -187,5 +187,15 @@
   "window.zoomLevel": 1,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Monokai",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "git.suggestSmartCommit": false,
+  "liveshare.audio.startCallOnShare": true,
+  "jupyter.askForKernelRestart": false,
+  "jupyter.textOutputLimit": 0,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
 }
