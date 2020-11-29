@@ -30,7 +30,8 @@
     "editor.tabSize": 2
   },
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "octref.vetur",
+    "editor.tabSize": 2
   },
   // 設定: LaTeX Workshop
   // LaTeX Workshop ではビルド設定を「Tool」と「Recipe」という2つで考える
