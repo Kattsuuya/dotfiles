@@ -14,17 +14,18 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[markdown]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "files.encoding": "utf8"
   },
   "[plaintext]": {},
   "[python]": {
     "editor.insertSpaces": true,
-    "files.encoding": "utf8",
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.python",
+    "files.encoding": "utf8"
   },
   "[ruby]": {
-    "files.encoding": "utf8",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "files.encoding": "utf8"
   },
   "[typescript]": {
     "editor.tabSize": 2
