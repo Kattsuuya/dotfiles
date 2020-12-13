@@ -55,3 +55,6 @@ if [ -d "$HOME/.pyenv" ] ; then
     export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init -)"
 fi
+
+# Intel Pin
+export PATH="$HOME/tools/pin-3.17-98314-g0c048d619-gcc-linux:$PATH"

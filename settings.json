@@ -6,12 +6,18 @@
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
   },
   "[markdown]": {
     "editor.tabSize": 2,
@@ -46,7 +52,14 @@
       "name": "Latexmk (XeLaTeX)",
       "command": "latexmk",
       "args": [
-        "-f", "-gg", "-pv", "-xelatex", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
+        "-f",
+        "-gg",
+        "-pv",
+        "-xelatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
       ]
     },
     // latexmk を利用した uplatex によるビルドコマンド
@@ -54,7 +67,13 @@
       "name": "Latexmk (upLaTeX)",
       "command": "latexmk",
       "args": [
-        "-f", "-gg", "-pv", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
+        "-f",
+        "-gg",
+        "-pv",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
       ]
     },
     // latexmk を利用した platex によるビルドコマンド
@@ -63,7 +82,15 @@
       "name": "Latexmk (pLaTeX)",
       "command": "latexmk",
       "args": [
-        "-f", "-gg", "-pv", "-latex='platex'", "-latexoption='-kanji=utf8 -no-guess-input-env'", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
+        "-f",
+        "-gg",
+        "-pv",
+        "-latex='platex'",
+        "-latexoption='-kanji=utf8 -no-guess-input-env'",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
       ]
     },
     // latexmk を利用した lualatex によるビルドコマンド
@@ -71,7 +98,14 @@
       "name": "Latexmk (LuaLaTeX)",
       "command": "latexmk",
       "args": [
-        "-f", "-gg", "-pv", "-lualatex", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
+        "-f",
+        "-gg",
+        "-pv",
+        "-lualatex",
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
       ]
     }
   ],
@@ -111,7 +145,13 @@
   // プログラムの挙動を制御する事ができる。
   // 参考リンク: https://blog.miz-ar.info/2016/11/magic-comments-in-tex/
   "latex-workshop.latex.magic.args": [
-    "-f", "-gg", "-pv", "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%"
+    "-f",
+    "-gg",
+    "-pv",
+    "-synctex=1",
+    "-interaction=nonstopmode",
+    "-file-line-error",
+    "%DOC%"
   ],
   // latex-workshop.latex.clean.fileTypes: クリーンアップ時に削除されるファイルの拡張子
   // LaTeX 文書はビルド時に一時ファイルとしていくつかのファイルを生成するが、最終的に必要となるのは
@@ -119,9 +159,31 @@
   // 一時ファイルの影響で、修正後のビルドに失敗してしまう事がよくある。そのため、一時的なファイルを
   // 削除する機能 (クリーンアップ) が LaTeX Workshop には備わっている。
   "latex-workshop.latex.clean.fileTypes": [
-    "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.synctex.gz",
     // for Beamer files
-    "_minted*", "*.nav", "*.snm", "*.vrb"
+    "_minted*",
+    "*.nav",
+    "*.snm",
+    "*.vrb"
   ],
   // latex-workshop.latex.clean.onFailBuild.enabled: ビルド失敗時に一時ファイルのクリーンアップを行うかどうか
   // 上記説明にもあったように、ビルド失敗時に生成された一時ファイルが悪影響を及ぼす事があるため、自動で
@@ -132,8 +194,8 @@
   // .tex ファイルの保存と同時に自動的にビルドを実行する設定があるが、文書が大きくなるに連れてビルドにも
   // 時間がかかってしまい、ビルドプログラムの負荷がエディタに影響するため、無効化しておく。
   "latex-workshop.latex.autoBuild.run": "never",
-
   "C_Cpp.clang_format_style": "{ BasedOnStyle: Microsoft, BreakBeforeBraces: Attach }",
+  "cmake.configureOnOpen": true,
   "autoDocstring.docstringFormat": "numpy",
   "breadcrumbs.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -148,15 +210,14 @@
   "git.ignoreLegacyWarning": true,
   "latex-workshop.message.update.show": false,
   "latex-workshop.view.pdf.viewer": "tab",
-  "plantuml.commandArgs": ["-Dfile.encoding=UTF-8"],
+  "plantuml.commandArgs": [
+    "-Dfile.encoding=UTF-8"
+  ],
   "plantuml.jarArgs": [
     "-charset",
     "UTF-8"
   ],
   "printcode.lineNumbers": "off",
-  "python.dataScience.askForKernelRestart": false,
-  "python.dataScience.textOutputLimit": 0,
-  "python.defaultInterpreterPath": "C:\\Users\\yoda\\.pyenv\\pyenv-win\\versions\\3.8.1\\python.exe",
   "python.formatting.autopep8Args": [
     "--aggressive",
     "--aggressive"
@@ -179,7 +240,7 @@
   "ruby.rubocop.executePath": "/Users/katsuya2019/.rbenv/shims/",
   "ruby.rubocop.suppressRubocopWarnings": true,
   "ruby.useLanguageServer": true,
-  "rust-client.rustupPath": "/Users/katsuya2019/.cargo/bin/rustup",
+  "rust-client.rustupPath": "/home/s1611387/.cargo/bin/rustup",
   "solargraph.definitions": true,
   "solargraph.diagnostics": true,
   "terminal.integrated.rendererType": "dom",
@@ -194,10 +255,9 @@
   "liveshare.audio.startCallOnShare": true,
   "jupyter.askForKernelRestart": false,
   "jupyter.textOutputLimit": 0,
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": [{
+    "viewType": "jupyter.notebook.ipynb",
+    "filenamePattern": "*.ipynb"
+  }],
+  "workbench.iconTheme": "material-icon-theme",
 }
