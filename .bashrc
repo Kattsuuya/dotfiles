@@ -118,3 +118,8 @@ fi
 
 # bashでコマンドのオプションを補完する
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# starship(コマンドプロンプトの設定)
+if type "starship" > /dev/null 2>&1; then
+    eval "$(starship init bash)"
+fi
