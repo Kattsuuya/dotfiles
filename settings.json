@@ -197,6 +197,11 @@
   "C_Cpp.clang_format_style": "{ BasedOnStyle: Microsoft, BreakBeforeBraces: Attach }",
   "cmake.configureOnOpen": true,
   "autoDocstring.docstringFormat": "numpy",
+  "bracket-pair-colorizer-2.colors": [
+    "White",
+    "White",
+    "White"
+  ],
   "breadcrumbs.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.detectIndentation": true,
