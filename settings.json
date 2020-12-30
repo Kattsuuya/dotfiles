@@ -11,7 +11,7 @@
   },
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -37,7 +37,7 @@
     "editor.tabSize": 2
   },
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   // 設定: LaTeX Workshop
@@ -204,23 +204,37 @@
   ],
   "breadcrumbs.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
   "editor.detectIndentation": true,
   "editor.minimap.enabled": true,
+  "editor.formatOnSave": true,
   "editor.tabSize": 4,
   "editor.useTabStops": true,
   // editor.wordSeparators: 単語単位での移動を行う場合の区切り文字を指定
   // 日本語文書で単語移動を使うため、助詞や読点、括弧を区切り文字として指定する
   "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや",
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
   "files.autoGuessEncoding": true,
   "git.ignoreLegacyWarning": true,
+  "git.suggestSmartCommit": false,
+  "javascript.format.enable": false,
+  "jupyter.askForKernelRestart": false,
+  "jupyter.textOutputLimit": 0,
   "latex-workshop.message.update.show": false,
   "latex-workshop.view.pdf.viewer": "tab",
+  "liveshare.audio.startCallOnShare": true,
   "plantuml.commandArgs": [
     "-Dfile.encoding=UTF-8"
   ],
   "plantuml.jarArgs": [
     "-charset",
     "UTF-8"
+  ],
+  "prettier.disableLanguages": [
+    "markdown"
   ],
   "printcode.lineNumbers": "off",
   "python.formatting.autopep8Args": [
@@ -256,13 +270,11 @@
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Monokai",
   "workbench.startupEditor": "newUntitledFile",
-  "git.suggestSmartCommit": false,
-  "liveshare.audio.startCallOnShare": true,
-  "jupyter.askForKernelRestart": false,
-  "jupyter.textOutputLimit": 0,
-  "workbench.editorAssociations": [{
-    "viewType": "jupyter.notebook.ipynb",
-    "filenamePattern": "*.ipynb"
-  }],
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
   "workbench.iconTheme": "material-icon-theme",
 }
