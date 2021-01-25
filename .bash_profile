@@ -65,3 +65,11 @@ if [ "$(uname)" == "Darwin" ] ; then
     export CPPFLAGS="-I/usr/local/opt/zlib/include"
 fi
 
+# goenvの設定
+if [ -d "$HOME/.goenv" ] ; then
+    export GOENV_ROOT="$HOME/.goenv"
+    export PATH="$GOENV_ROOT/bin:$PATH"
+    eval "$(goenv init -)"
+    export PATH="$GOROOT/bin/$PATH"
+    export PATH="$PATH:$GOPATH/bin"
+fi
