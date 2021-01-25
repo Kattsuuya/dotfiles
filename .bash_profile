@@ -58,3 +58,18 @@ fi
 
 # Intel Pin
 export PATH="$HOME/tools/pin-3.17-98314-g0c048d619-gcc-linux:$PATH"
+
+# macOSの場合、zlibのパスをコンパイラに伝える
+if [ "$(uname)" == "Darwin" ] ; then
+    export LDFLAGS="-L/usr/local/opt/zlib/lib"
+    export CPPFLAGS="-I/usr/local/opt/zlib/include"
+fi
+
+# goenvの設定
+if [ -d "$HOME/.goenv" ] ; then
+    export GOENV_ROOT="$HOME/.goenv"
+    export PATH="$GOENV_ROOT/bin:$PATH"
+    eval "$(goenv init -)"
+    export PATH="$GOROOT/bin/$PATH"
+    export PATH="$PATH:$GOPATH/bin"
+fi
