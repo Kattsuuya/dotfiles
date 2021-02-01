@@ -222,7 +222,7 @@
   "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
   "files.autoGuessEncoding": true,
-  "git.autofetch": true,
+  "git.autofetch": false,
   "git.ignoreLegacyWarning": true,
   "git.suggestSmartCommit": false,
   "go.useLanguageServer": true,
