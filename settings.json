@@ -40,6 +40,9 @@
   "[typescript]": {
     "editor.tabSize": 2
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
@@ -257,6 +260,7 @@
   "python.linting.pycodestyleEnabled": false,
   "python.linting.pylintEnabled": false,
   "python.pythonPath": "/Users/katsuya2019/.pyenv/shims/python",
+  "remote.SSH.configFile": "/Users/katsuya2019/.ssh/config",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
   "ruby.lint": {
@@ -271,16 +275,12 @@
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
   "todo-tree.tree.showScanModeButton": false,
+  "vim.useSystemClipboard": true,
   "window.menuBarVisibility": "default",
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": [],
   "workbench.iconTheme": "material-icon-theme",
 }
