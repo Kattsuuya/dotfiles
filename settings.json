@@ -35,7 +35,8 @@
   },
   "[ruby]": {
     "editor.tabSize": 2,
-    "files.encoding": "utf8"
+    "files.encoding": "utf8",
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
   "[typescript]": {
     "editor.tabSize": 2
@@ -224,6 +225,7 @@
   "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや",
   "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
+  "explorer.confirmDragAndDrop": false,
   "files.autoGuessEncoding": true,
   "git.autofetch": false,
   "git.ignoreLegacyWarning": true,
@@ -259,14 +261,13 @@
   "python.linting.flake8Enabled": true,
   "python.linting.pycodestyleEnabled": false,
   "python.linting.pylintEnabled": false,
-  "python.pythonPath": "/Users/katsuya2019/.pyenv/shims/python",
   "remote.SSH.configFile": "/Users/katsuya2019/.ssh/config",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
   "ruby.lint": {
     "rubocop": true
   },
-  "ruby.rubocop.executePath": "/Users/katsuya2019/.rbenv/shims/",
+  "ruby.rubocop.executePath": "/usr/local/bin/",
   "ruby.rubocop.suppressRubocopWarnings": true,
   "ruby.useLanguageServer": true,
   "rust-client.rustupPath": "/home/s1611387/.cargo/bin/rustup",
@@ -275,9 +276,7 @@
   "terminal.integrated.rendererType": "dom",
   "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
   "todo-tree.tree.showScanModeButton": false,
-  "vim.useSystemClipboard": true,
   "window.menuBarVisibility": "default",
-  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
