@@ -73,3 +73,9 @@ if [ -d "$HOME/.goenv" ] ; then
     export PATH="$GOROOT/bin/$PATH"
     export PATH="$PATH:$GOPATH/bin"
 fi
+
+# DynamoRIO
+if [ -d "$HOME/tools/DynamoRIO-Linux-8.0.0-1" ]; then
+    export DYNAMORIO_HOME="$HOME/tools/DynamoRIO-Linux-8.0.0-1"
+fi
+

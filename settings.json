@@ -3,6 +3,9 @@
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
@@ -225,6 +228,7 @@
   "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや",
   "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
+  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.autoGuessEncoding": true,
   "git.autofetch": false,
