@@ -9,6 +9,9 @@
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
+  "[css]": {
+    "editor.tabSize": 2
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -219,8 +222,8 @@
     "source.fixAll.eslint": true,
   },
   "editor.detectIndentation": true,
-  "editor.minimap.enabled": true,
   "editor.formatOnSave": true,
+  "editor.minimap.enabled": true,
   "editor.tabSize": 4,
   "editor.useTabStops": true,
   // editor.wordSeparators: 単語単位での移動を行う場合の区切り文字を指定
