@@ -16,6 +16,9 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -42,7 +45,8 @@
     "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
   "[typescript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -206,14 +210,17 @@
   // 時間がかかってしまい、ビルドプログラムの負荷がエディタに影響するため、無効化しておく。
   "latex-workshop.latex.autoBuild.run": "never",
   "C_Cpp.clang_format_style": "{ BasedOnStyle: Microsoft, BreakBeforeBraces: Attach }",
-  "cmake.configureOnOpen": true,
   "autoDocstring.docstringFormat": "numpy",
+  "auto-close-tag.disableOnLanguage": [
+    "typescript",
+  ],
   "bracket-pair-colorizer-2.colors": [
     "White",
     "White",
     "White"
   ],
   "breadcrumbs.enabled": true,
+  "cmake.configureOnOpen": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
@@ -241,6 +248,10 @@
   "latex-workshop.message.update.show": false,
   "latex-workshop.view.pdf.viewer": "tab",
   "liveshare.audio.startCallOnShare": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
   "plantuml.commandArgs": [
     "-Dfile.encoding=UTF-8"
   ],
@@ -256,6 +267,7 @@
     "--aggressive",
     "--aggressive"
   ],
+  "python.defaultInterpreterPath": "/home/s1611387/.pyenv/shims/python",
   "python.formatting.provider": "black",
   "python.linting.flake8Args": [
     "--ignore=E265, E701, E702, E703, E704, W293, W503, W504",
@@ -283,7 +295,10 @@
   "window.menuBarVisibility": "default",
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Dracula",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.editorAssociations": [],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.pdf": "default"
+  },
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
 }

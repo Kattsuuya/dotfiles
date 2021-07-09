@@ -79,3 +79,7 @@ if [ -d "$HOME/tools/DynamoRIO-Linux-8.0.0-1" ]; then
     export DYNAMORIO_HOME="$HOME/tools/DynamoRIO-Linux-8.0.0-1"
 fi
 
+if [ -d "$HOME/tools/beaengine/lib/Linux.gnu.Debug" ]; then
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/tools/beaengine/lib/Linux.gnu.Debug
+fi
+
