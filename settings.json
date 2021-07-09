@@ -287,6 +287,5 @@
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.editorAssociations": [],
   "workbench.iconTheme": "material-icon-theme",
 }
