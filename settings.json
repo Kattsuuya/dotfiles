@@ -3,21 +3,34 @@
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[css]": {
+    "editor.tabSize": 2
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[latex]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
   "[markdown]": {
     "editor.tabSize": 2,
@@ -31,10 +44,15 @@
   },
   "[ruby]": {
     "editor.tabSize": 2,
-    "files.encoding": "utf8"
+    "files.encoding": "utf8",
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
   "[typescript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -195,21 +213,24 @@
   // 時間がかかってしまい、ビルドプログラムの負荷がエディタに影響するため、無効化しておく。
   "latex-workshop.latex.autoBuild.run": "never",
   "C_Cpp.clang_format_style": "{ BasedOnStyle: Microsoft, BreakBeforeBraces: Attach }",
-  "cmake.configureOnOpen": true,
   "autoDocstring.docstringFormat": "numpy",
+  "auto-close-tag.disableOnLanguage": [
+    "typescript",
+  ],
   "bracket-pair-colorizer-2.colors": [
     "White",
     "White",
     "White"
   ],
   "breadcrumbs.enabled": true,
+  "cmake.configureOnOpen": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
   },
   "editor.detectIndentation": true,
-  "editor.minimap.enabled": true,
   "editor.formatOnSave": true,
+  "editor.minimap.enabled": true,
   "editor.tabSize": 4,
   "editor.useTabStops": true,
   // editor.wordSeparators: 単語単位での移動を行う場合の区切り文字を指定
@@ -217,15 +238,23 @@
   "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや",
   "eslint.format.enable": true,
   "eslint.packageManager": "yarn",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   "files.autoGuessEncoding": true,
+  "git.autofetch": false,
   "git.ignoreLegacyWarning": true,
   "git.suggestSmartCommit": false,
+  "go.useLanguageServer": true,
   "javascript.format.enable": false,
   "jupyter.askForKernelRestart": false,
   "jupyter.textOutputLimit": 0,
   "latex-workshop.message.update.show": false,
   "latex-workshop.view.pdf.viewer": "tab",
   "liveshare.audio.startCallOnShare": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
   "plantuml.commandArgs": [
     "-Dfile.encoding=UTF-8"
   ],
@@ -241,22 +270,23 @@
     "--aggressive",
     "--aggressive"
   ],
-  "python.formatting.provider": "autopep8",
+  "python.defaultInterpreterPath": "/home/s1611387/.pyenv/shims/python",
+  "python.formatting.provider": "black",
   "python.linting.flake8Args": [
-    "--ignore=E265, E701, E702, E703, E704, W293, W504",
+    "--ignore=E265, E701, E702, E703, E704, W293, W503, W504",
     "--max-line-length=240",
     "--max-complexity=20"
   ],
   "python.linting.flake8Enabled": true,
   "python.linting.pycodestyleEnabled": false,
   "python.linting.pylintEnabled": false,
-  "python.pythonPath": "/Users/katsuya2019/.pyenv/shims/python",
+  "remote.SSH.configFile": "/Users/katsuya2019/.ssh/config",
   "ruby.format": "rubocop",
   "ruby.intellisense": "rubyLocate",
   "ruby.lint": {
     "rubocop": true
   },
-  "ruby.rubocop.executePath": "/Users/katsuya2019/.rbenv/shims/",
+  "ruby.rubocop.executePath": "/usr/local/bin/",
   "ruby.rubocop.suppressRubocopWarnings": true,
   "ruby.useLanguageServer": true,
   "rust-client.rustupPath": "/home/s1611387/.cargo/bin/rustup",
@@ -266,12 +296,12 @@
   "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
   "todo-tree.tree.showScanModeButton": false,
   "window.menuBarVisibility": "default",
-  "window.zoomLevel": 1,
   "workbench.activityBar.visible": true,
-  "workbench.colorTheme": "Monokai",
-  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Dracula",
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.ipynb": "jupyter-notebook",
+    "*.pdf": "default"
   },
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
 }
