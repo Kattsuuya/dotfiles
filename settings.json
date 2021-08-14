@@ -270,11 +270,8 @@
   "workbench.activityBar.visible": true,
   "workbench.colorTheme": "Monokai",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "workbench.iconTheme": "material-icon-theme",
 }
