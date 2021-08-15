@@ -304,4 +304,7 @@
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 1,
+  "python.linting.mypyEnabled": true,
+  "terminal.integrated.fontFamily": "\"Hack Nerd Font\"",
 }
