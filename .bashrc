@@ -158,7 +158,7 @@ fi
 if [ -d "$HOME/.pyenv" ] ; then
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PYENV_ROOT/bin:$PATH"
-  $ eval "$(pyenv init --path)"
+    eval "$(pyenv init --path)"
 fi
 
 # Intel Pin
@@ -184,3 +184,16 @@ fi
 
 # Oh My Posh
 eval "$(oh-my-posh --init --shell bash --config `brew --prefix oh-my-posh`/themes/paradox.omp.json)"
+
+# Zoxide
+eval "$(zoxide init bash)"
+
+# McFly
+eval "$(mcfly init bash)"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc'; fi

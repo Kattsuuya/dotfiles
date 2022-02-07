@@ -1,0 +1,230 @@
+2021-10-24 23:09:39,390 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2021-10-24 23:09:39,621 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2021-10-24 23:09:39,652 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--region: "asia-northeast1", --runtime: "python38", --trigger-topic: "daily-bleeeeeefing-topic", NAME: "post_daily_bleeeeeefing"]
+2021-10-24 23:09:39,697 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:09:40,304 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/projects/bleeeeeefing/locations/asia-northeast1/functions/post_daily_bleeeeeefing?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:40,319 INFO     root            Not using ignore file.
+2021-10-24 23:09:40,322 INFO     root            Not using ignore file.
+2021-10-24 23:09:40,346 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:09:42,759 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "POST /v1/projects/bleeeeeefing/locations/asia-northeast1/functions:generateUploadUrl?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:42,795 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-10-24 23:09:43,000 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /gcf-upload-asia-northeast1-59ec7191-8a04-4bd0-a503-aa7afcef316f/044486eb-1f3e-477f-8e4f-d061b4214709.zip?GoogleAccessId=service-511598790723%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1635086382&Signature=xZx99sU9%2B%2BswKaE6RodwvCZVEvqeMz%2FHiqGPddV%2BlRG8kNt9n5RDQ5oUDUqHeCWUvtUdZt8NhXkloRocuQ67hLuK0vK7GlMPTug1GJo1L0iubPOvTK4AbFpSLHwGZljZxe3HCQ8JQE%2B%2BJidSFzc%2B%2Fmx4yzZfi8xOtVsU6fG2ZXWOHC3nQ7PlzGofw9YzWzdSCs7uNpNj5HcFCx%2BdeFlCoijozMjL72%2BUtbi4A2Ii6chwI%2BYj8bvL%2F0dNGOlyDht5KOqFieAdVaLGJWaWKT7rR3IwNX721LoHWRH772coEFi%2BZPlNrFzhReYpPVoEDqrp7INBAsC7GWu0aFP%2FqCSLgA%3D%3D HTTP/1.1" 200 0
+2021-10-24 23:09:43,022 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:09:44,416 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "PATCH /v1/projects/bleeeeeefing/locations/asia-northeast1/functions/post_daily_bleeeeeefing?alt=json&updateMask=eventTrigger%2ChttpsTrigger%2Cruntime%2CsourceUploadUrl HTTP/1.1" 200 None
+2021-10-24 23:09:44,433 INFO     ___FILE_ONLY___ Deploying function (may take a while - up to 2 minutes)...
+2021-10-24 23:09:44,440 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:09:44,909 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:44,926 INFO     ___FILE_ONLY___ 
+For Cloud Build Logs, visit: https://console.cloud.google.com/cloud-build/builds;region=asia-northeast1/2b283c81-869d-482d-9dc8-d8e4e4afe96f?project=511598790723
+
+2021-10-24 23:09:47,059 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:48,704 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:50,950 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:52,673 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:54,452 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:56,883 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:09:58,836 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:00,462 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:02,216 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:04,062 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:05,901 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:07,420 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:08,871 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:10,562 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:11,882 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:14,197 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:15,692 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:17,357 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:19,519 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:20,933 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:23,100 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:25,324 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:26,687 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:28,640 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:30,121 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:32,248 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:34,218 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:35,781 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:38,023 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:39,796 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:41,776 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:43,590 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:45,428 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:47,076 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:49,219 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:50,675 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:52,193 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:54,103 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:56,181 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:10:58,230 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:00,275 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:02,072 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:04,259 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:06,219 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:07,774 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:09,936 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:11,608 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:13,640 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:15,797 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:17,379 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:19,265 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:21,271 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:22,790 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:24,836 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:26,842 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:28,217 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:29,512 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:31,570 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:33,262 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:34,891 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:36,692 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:38,782 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:40,521 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:42,695 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:44,036 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:45,395 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:47,352 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:49,353 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:51,647 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:53,938 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:56,132 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:11:58,444 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:00,377 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:02,583 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:04,055 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:05,937 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:07,864 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:09,606 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:11,793 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:13,460 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:15,206 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:17,092 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:18,598 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:20,326 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS9wb3N0X2RhaWx5X2JsZWVlZWVlZmluZy95ZGlpQnVpZUFTSQ?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:20,375 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:12:20,820 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/projects/bleeeeeefing/locations/asia-northeast1/functions/post_daily_bleeeeeefing?alt=json HTTP/1.1" 200 None
+2021-10-24 23:12:20,833 INFO     root            Display format: "default"
+2021-10-24 23:12:20,844 INFO     ___FILE_ONLY___ availableMemoryMb
+2021-10-24 23:12:20,845 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,845 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,845 INFO     ___FILE_ONLY___ 256
+2021-10-24 23:12:20,845 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,846 INFO     ___FILE_ONLY___ buildId
+2021-10-24 23:12:20,847 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,847 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,848 INFO     ___FILE_ONLY___ b388164b-a04e-44db-ae04-50ab9b15f9bb
+2021-10-24 23:12:20,848 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,848 INFO     ___FILE_ONLY___ buildName
+2021-10-24 23:12:20,848 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,848 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,849 INFO     ___FILE_ONLY___ projects/511598790723/locations/asia-northeast1/builds/b388164b-a04e-44db-ae04-50ab9b15f9bb
+2021-10-24 23:12:20,851 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,851 INFO     ___FILE_ONLY___ entryPoint
+2021-10-24 23:12:20,852 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,852 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,852 INFO     ___FILE_ONLY___ post_daily_bleeeeeefing
+2021-10-24 23:12:20,853 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,853 INFO     ___FILE_ONLY___ eventTrigger
+2021-10-24 23:12:20,854 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,854 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,854 INFO     ___FILE_ONLY___   
+2021-10-24 23:12:20,855 INFO     ___FILE_ONLY___ eventType
+2021-10-24 23:12:20,855 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,855 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,855 INFO     ___FILE_ONLY___ google.pubsub.topic.publish
+2021-10-24 23:12:20,855 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,855 INFO     ___FILE_ONLY___   
+2021-10-24 23:12:20,856 INFO     ___FILE_ONLY___ failurePolicy
+2021-10-24 23:12:20,856 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,856 INFO     ___FILE_ONLY___  {
+2021-10-24 23:12:20,856 INFO     ___FILE_ONLY___ }
+2021-10-24 23:12:20,857 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,857 INFO     ___FILE_ONLY___   
+2021-10-24 23:12:20,857 INFO     ___FILE_ONLY___ resource
+2021-10-24 23:12:20,857 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,859 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,859 INFO     ___FILE_ONLY___ projects/bleeeeeefing/topics/daily-bleeeeeefing-topic
+2021-10-24 23:12:20,859 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,859 INFO     ___FILE_ONLY___   
+2021-10-24 23:12:20,860 INFO     ___FILE_ONLY___ service
+2021-10-24 23:12:20,860 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,860 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,861 INFO     ___FILE_ONLY___ pubsub.googleapis.com
+2021-10-24 23:12:20,861 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,862 INFO     ___FILE_ONLY___ ingressSettings
+2021-10-24 23:12:20,862 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,863 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,863 INFO     ___FILE_ONLY___ ALLOW_ALL
+2021-10-24 23:12:20,864 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,864 INFO     ___FILE_ONLY___ labels
+2021-10-24 23:12:20,864 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,865 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,865 INFO     ___FILE_ONLY___   
+2021-10-24 23:12:20,865 INFO     ___FILE_ONLY___ deployment-tool
+2021-10-24 23:12:20,865 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,866 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,866 INFO     ___FILE_ONLY___ cli-gcloud
+2021-10-24 23:12:20,866 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,867 INFO     ___FILE_ONLY___ name
+2021-10-24 23:12:20,867 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,868 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,868 INFO     ___FILE_ONLY___ projects/bleeeeeefing/locations/asia-northeast1/functions/post_daily_bleeeeeefing
+2021-10-24 23:12:20,868 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,869 INFO     ___FILE_ONLY___ runtime
+2021-10-24 23:12:20,869 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,869 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,870 INFO     ___FILE_ONLY___ python38
+2021-10-24 23:12:20,871 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,872 INFO     ___FILE_ONLY___ serviceAccountEmail
+2021-10-24 23:12:20,872 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,873 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,873 INFO     ___FILE_ONLY___ bleeeeeefing@appspot.gserviceaccount.com
+2021-10-24 23:12:20,874 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,874 INFO     ___FILE_ONLY___ sourceUploadUrl
+2021-10-24 23:12:20,875 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,876 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,877 INFO     ___FILE_ONLY___ https://storage.googleapis.com/gcf-upload-asia-northeast1-59ec7191-8a04-4bd0-a503-aa7afcef316f/044486eb-1f3e-477f-8e4f-d061b4214709.zip
+2021-10-24 23:12:20,877 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,877 INFO     ___FILE_ONLY___ status
+2021-10-24 23:12:20,878 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,878 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,878 INFO     ___FILE_ONLY___ ACTIVE
+2021-10-24 23:12:20,879 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,879 INFO     ___FILE_ONLY___ timeout
+2021-10-24 23:12:20,881 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,882 INFO     ___FILE_ONLY___  
+2021-10-24 23:12:20,882 INFO     ___FILE_ONLY___ 60s
+2021-10-24 23:12:20,883 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,883 INFO     ___FILE_ONLY___ updateTime
+2021-10-24 23:12:20,884 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,884 INFO     ___FILE_ONLY___  '
+2021-10-24 23:12:20,884 INFO     ___FILE_ONLY___ 2021-10-24T14:12:19.164Z
+2021-10-24 23:12:20,884 INFO     ___FILE_ONLY___ '
+2021-10-24 23:12:20,885 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,885 INFO     ___FILE_ONLY___ versionId
+2021-10-24 23:12:20,885 INFO     ___FILE_ONLY___ :
+2021-10-24 23:12:20,885 INFO     ___FILE_ONLY___  '
+2021-10-24 23:12:20,886 INFO     ___FILE_ONLY___ 3
+2021-10-24 23:12:20,886 INFO     ___FILE_ONLY___ '
+2021-10-24 23:12:20,886 INFO     ___FILE_ONLY___ 
+
+2021-10-24 23:12:20,908 DEBUG    root            Metrics reporting process started...

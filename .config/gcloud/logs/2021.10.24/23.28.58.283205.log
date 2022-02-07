@@ -1,0 +1,7 @@
+2021-10-24 23:28:58,286 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2021-10-24 23:28:58,412 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2021-10-24 23:28:58,451 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+

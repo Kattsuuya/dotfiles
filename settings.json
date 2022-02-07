@@ -34,7 +34,8 @@
   },
   "[markdown]": {
     "editor.tabSize": 2,
-    "files.encoding": "utf8"
+    "files.encoding": "utf8",
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "[plaintext]": {},
   "[python]": {
@@ -289,7 +290,7 @@
   "ruby.rubocop.executePath": "/usr/local/bin/",
   "ruby.rubocop.suppressRubocopWarnings": true,
   "ruby.useLanguageServer": true,
-  "rust-client.rustupPath": "/home/s1611387/.cargo/bin/rustup",
+  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
   "solargraph.definitions": true,
   "solargraph.diagnostics": true,
   "terminal.integrated.rendererType": "dom",
@@ -307,4 +308,5 @@
   "window.zoomLevel": 1,
   "python.linting.mypyEnabled": true,
   "terminal.integrated.fontFamily": "\"Hack Nerd Font\"",
+  "bracket-pair-colorizer-2.depreciation-notice": false,
 }

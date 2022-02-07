@@ -1,0 +1,20 @@
+2021-10-24 22:52:38,797 DEBUG    root            Running [gcloud] with arguments: [-v: "None"]
+2021-10-24 22:52:38,800 DEBUG    root            Loaded Command Group: ['gcloud', 'version']
+2021-10-24 22:52:38,803 DEBUG    root            Running [gcloud.version] with arguments: []
+2021-10-24 22:52:38,814 INFO     root            Display format: "flattened[no-pad,separator=" "]"
+2021-10-24 22:52:38,815 INFO     ___FILE_ONLY___ Google Cloud SDK
+2021-10-24 22:52:38,815 INFO     ___FILE_ONLY___  
+2021-10-24 22:52:38,815 INFO     ___FILE_ONLY___ 360.0.0
+
+2021-10-24 22:52:38,815 INFO     ___FILE_ONLY___ bq
+2021-10-24 22:52:38,816 INFO     ___FILE_ONLY___  
+2021-10-24 22:52:38,816 INFO     ___FILE_ONLY___ 2.0.71
+
+2021-10-24 22:52:38,816 INFO     ___FILE_ONLY___ core
+2021-10-24 22:52:38,816 INFO     ___FILE_ONLY___  
+2021-10-24 22:52:38,816 INFO     ___FILE_ONLY___ 2021.10.04
+
+2021-10-24 22:52:38,817 INFO     ___FILE_ONLY___ gsutil
+2021-10-24 22:52:38,817 INFO     ___FILE_ONLY___  
+2021-10-24 22:52:38,817 INFO     ___FILE_ONLY___ 5.3
+

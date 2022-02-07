@@ -1,0 +1,300 @@
+2021-10-24 23:54:14,123 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2021-10-24 23:54:14,184 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2021-10-24 23:54:14,200 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--region: "asia-northeast1", --runtime: "python38", --set-env-vars: "OrderedDict([('NOTION_TOKEN', 'secret_28w49SoC8TQ3LhNd44zid6r3IWU370xsc1PiLjleL9u'), ('NOTION_DATABASE_ID', '2680490157104632a4686559ab391b1f'), ('NOTION_VERSION', '2021-08-16'), ('SLACK_TOKEN', 'xoxp-1694932446931-1679953264663-1757489772930-fecdf96b19ce8fbbd014461984cdf3d6'), ('SLACK_CHANNEL', 'U01KZU17SKH')])", --trigger-topic: "daily-bleeeeeefing-topic", NAME: "trigger"]
+2021-10-24 23:54:14,220 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:54:14,952 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/projects/bleeeeeefing/locations/asia-northeast1/functions/trigger?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:14,965 INFO     root            Using ignore file at [./.gcloudignore].
+2021-10-24 23:54:14,985 DEBUG    root            Skipping file [./.gitignore]
+2021-10-24 23:54:14,986 DEBUG    root            Skipping file [./.env]
+2021-10-24 23:54:14,988 DEBUG    root            Skipping file [./.gcloudignore]
+2021-10-24 23:54:14,996 DEBUG    root            Skipping file [./ableef/__pycache__/__init__.cpython-38.pyc]
+2021-10-24 23:54:14,998 DEBUG    root            Skipping file [./ableef/__pycache__/lib.cpython-38.pyc]
+2021-10-24 23:54:14,999 DEBUG    root            Skipping file [./.pytest_cache/CACHEDIR.TAG]
+2021-10-24 23:54:15,001 DEBUG    root            Skipping file [./.pytest_cache/README.md]
+2021-10-24 23:54:15,002 DEBUG    root            Skipping file [./.pytest_cache/.gitignore]
+2021-10-24 23:54:15,003 DEBUG    root            Skipping file [./.pytest_cache/v/cache/nodeids]
+2021-10-24 23:54:15,004 DEBUG    root            Skipping file [./.pytest_cache/v/cache/lastfailed]
+2021-10-24 23:54:15,005 DEBUG    root            Skipping file [./.pytest_cache/v/cache/stepwise]
+2021-10-24 23:54:15,011 DEBUG    root            Skipping file [./tests/__pycache__/__init__.cpython-38.pyc]
+2021-10-24 23:54:15,012 DEBUG    root            Skipping file [./tests/__pycache__/test_ableef.cpython-38-pytest-5.4.3.pyc]
+2021-10-24 23:54:15,014 DEBUG    root            Skipping file [./tests/__pycache__/conftest.cpython-38-pytest-5.4.3.pyc]
+2021-10-24 23:54:15,015 DEBUG    root            Skipping file [./.git/config]
+2021-10-24 23:54:15,016 DEBUG    root            Skipping file [./.git/HEAD]
+2021-10-24 23:54:15,017 DEBUG    root            Skipping file [./.git/description]
+2021-10-24 23:54:15,018 DEBUG    root            Skipping file [./.git/index]
+2021-10-24 23:54:15,019 DEBUG    root            Skipping file [./.git/COMMIT_EDITMSG]
+2021-10-24 23:54:15,020 DEBUG    root            Skipping file [./.git/FETCH_HEAD]
+2021-10-24 23:54:15,021 DEBUG    root            Skipping file [./.git/objects/61/8bab647912eef812903dedc10845bed0e36e0c]
+2021-10-24 23:54:15,022 DEBUG    root            Skipping file [./.git/objects/50/ac18aac129bec0fdf7af28f432a685abcdc412]
+2021-10-24 23:54:15,023 DEBUG    root            Skipping file [./.git/objects/03/3988fbb0f84b887ce375d7816b19548e8f97b7]
+2021-10-24 23:54:15,024 DEBUG    root            Skipping file [./.git/objects/69/62676eaa56c7ece1df34cd8801e520d11ba392]
+2021-10-24 23:54:15,025 DEBUG    root            Skipping file [./.git/objects/3c/0358cb06427cb3a728e603e2fe2746cd758118]
+2021-10-24 23:54:15,025 DEBUG    root            Skipping file [./.git/objects/56/f2ec808d13a997c0130bca49d76af535362a8d]
+2021-10-24 23:54:15,026 DEBUG    root            Skipping file [./.git/objects/3d/c1f76bc69e3f559bee6253b24fc93acee9e1f9]
+2021-10-24 23:54:15,027 DEBUG    root            Skipping file [./.git/objects/9d/8b6f0ef2df3ada41c086592af64b150e7abd29]
+2021-10-24 23:54:15,028 DEBUG    root            Skipping file [./.git/objects/bb/f945884a028279cc8c9fb897ae0f697ace3fa1]
+2021-10-24 23:54:15,029 DEBUG    root            Skipping file [./.git/objects/df/88c2d14c557a9d7ccd132f541ab09cbae1327b]
+2021-10-24 23:54:15,030 DEBUG    root            Skipping file [./.git/objects/a2/eb4d2016c3b97baf8fb0a41e3f49fcd98d5e82]
+2021-10-24 23:54:15,031 DEBUG    root            Skipping file [./.git/objects/bd/82d79f15d5a72b8c3a88e6e7e90d6685b34fe5]
+2021-10-24 23:54:15,032 DEBUG    root            Skipping file [./.git/objects/bd/137534cd7f78f5561c27577a9f38042f762322]
+2021-10-24 23:54:15,033 DEBUG    root            Skipping file [./.git/objects/d6/8f7826234a72f3ca4af20dff5159b7d3e4aa3c]
+2021-10-24 23:54:15,033 DEBUG    root            Skipping file [./.git/objects/bc/e982c9eb798898458ddbd2f198c10af0c59ce4]
+2021-10-24 23:54:15,034 DEBUG    root            Skipping file [./.git/objects/ae/5e8895b0b4d1084c1095d5a43053d47225910b]
+2021-10-24 23:54:15,035 DEBUG    root            Skipping file [./.git/objects/d8/5fc56f12061f57b72985a24468b235e41ef0ff]
+2021-10-24 23:54:15,036 DEBUG    root            Skipping file [./.git/objects/e2/78cca896f5268ee92d196980bd94674b57da74]
+2021-10-24 23:54:15,037 DEBUG    root            Skipping file [./.git/objects/ee/4739fa7ec52f0e4089f3ff87cdf3c44b748fdc]
+2021-10-24 23:54:15,038 DEBUG    root            Skipping file [./.git/objects/f2/b1ce2cb1c73301850e9766727b01e0cf267229]
+2021-10-24 23:54:15,039 DEBUG    root            Skipping file [./.git/objects/e3/9a7906582d967fe0763f4ab19640be937952f4]
+2021-10-24 23:54:15,040 DEBUG    root            Skipping file [./.git/objects/ca/ed37d6907f1a6b78e477104d86930d9aa3da64]
+2021-10-24 23:54:15,041 DEBUG    root            Skipping file [./.git/objects/e4/4f5cf63b73ccc4bb6847a16a2c8e02bfe222fc]
+2021-10-24 23:54:15,042 DEBUG    root            Skipping file [./.git/objects/16/1610f7fd8e34de7cfb4bb71a294910869b585c]
+2021-10-24 23:54:15,043 DEBUG    root            Skipping file [./.git/objects/89/9c5971704d42b2886bd3836d24abdee8b5d747]
+2021-10-24 23:54:15,044 DEBUG    root            Skipping file [./.git/objects/87/0a624bfdfb7cd312c68de045b0c036daa9982f]
+2021-10-24 23:54:15,045 DEBUG    root            Skipping file [./.git/objects/8f/6bab6ec5915f062e5d95926988ac0be435bbf0]
+2021-10-24 23:54:15,046 DEBUG    root            Skipping file [./.git/objects/19/24d665673afa5b6beaf277dcf8e92cf17466bc]
+2021-10-24 23:54:15,047 DEBUG    root            Skipping file [./.git/objects/4c/5d1a6ad7ac3513544ac0d2c9cb6178d2b3741f]
+2021-10-24 23:54:15,048 DEBUG    root            Skipping file [./.git/objects/21/11128682598ee71998cda8f8b33c8e7223881f]
+2021-10-24 23:54:15,049 DEBUG    root            Skipping file [./.git/objects/86/9ce171afcaf6685b78a5575bebe38391c45d06]
+2021-10-24 23:54:15,050 DEBUG    root            Skipping file [./.git/objects/44/419bdf0aa93db40dda8ecbc262a8a91d611b2f]
+2021-10-24 23:54:15,051 DEBUG    root            Skipping file [./.git/objects/2f/25a04b5781bd661527ed5d9ffa4c22fe5ce50a]
+2021-10-24 23:54:15,052 DEBUG    root            Skipping file [./.git/objects/43/87b90eae069cc7e8d818cf593b3d6d559246e5]
+2021-10-24 23:54:15,053 DEBUG    root            Skipping file [./.git/objects/38/7609e2e09575ca354260c63dca30655bb79c9f]
+2021-10-24 23:54:15,054 DEBUG    root            Skipping file [./.git/objects/62/dbb46cf6e6887ba78897f4d6a393878be3e0ef]
+2021-10-24 23:54:15,055 DEBUG    root            Skipping file [./.git/objects/5e/864d9039a44c9642d6a83583f0fd4730a75ac7]
+2021-10-24 23:54:15,057 DEBUG    root            Skipping file [./.git/objects/39/94effe4b35d37ced28806301ff083ec896155c]
+2021-10-24 23:54:15,058 DEBUG    root            Skipping file [./.git/objects/63/f7804c07ae4416283244b7204460c4044b2e68]
+2021-10-24 23:54:15,059 DEBUG    root            Skipping file [./.git/objects/63/d3b5d8c0e07c984effdc5b0c1804c8f1f4928c]
+2021-10-24 23:54:15,059 DEBUG    root            Skipping file [./.git/objects/b8/22b799ca78b8fa5035e10ec85ed342124cfbc5]
+2021-10-24 23:54:15,060 DEBUG    root            Skipping file [./.git/objects/dd/f079aac5b30d9ab5e566757b4141c300e4e000]
+2021-10-24 23:54:15,061 DEBUG    root            Skipping file [./.git/objects/b7/94fd409a5e3b3b65ad76a43d6a01a318877640]
+2021-10-24 23:54:15,062 DEBUG    root            Skipping file [./.git/objects/b7/d9a98f35bd22a3509d1bcf9836b8f47a8c6533]
+2021-10-24 23:54:15,063 DEBUG    root            Skipping file [./.git/objects/db/74d47e9946e1458771b47c4deb65526e5a6ff5]
+2021-10-24 23:54:15,064 DEBUG    root            Skipping file [./.git/objects/a1/41131d9c534a7dadbda9ba08ea7e90d1a44b04]
+2021-10-24 23:54:15,065 DEBUG    root            Skipping file [./.git/objects/e1/9f9580c87c2274df375e184f040825ebd5229a]
+2021-10-24 23:54:15,066 DEBUG    root            Skipping file [./.git/objects/e6/2c839ad7d67a7ae6b9acb112d37b7e4e3d74f2]
+2021-10-24 23:54:15,067 DEBUG    root            Skipping file [./.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391]
+2021-10-24 23:54:15,068 DEBUG    root            Skipping file [./.git/objects/e8/9f5252a88af5ce7f9ce8baa7b738f303d3dbb4]
+2021-10-24 23:54:15,070 DEBUG    root            Skipping file [./.git/objects/c5/ea96f2b68f81eb6914ac64c6a6ef87fb8b1e2a]
+2021-10-24 23:54:15,071 DEBUG    root            Skipping file [./.git/objects/e9/1a96d5fcee31d88e50e358dbf239b89c942cb7]
+2021-10-24 23:54:15,072 DEBUG    root            Skipping file [./.git/objects/e7/dbfa35dd5f23a46f1d7c511093eb2afd1e5eb3]
+2021-10-24 23:54:15,073 DEBUG    root            Skipping file [./.git/objects/cb/f400544d1a4bf12c771bfff4310598985f65b1]
+2021-10-24 23:54:15,075 DEBUG    root            Skipping file [./.git/objects/46/4649404034fc30d6817a43f48a37c982c3087a]
+2021-10-24 23:54:15,076 DEBUG    root            Skipping file [./.git/objects/2c/cf6924d0e084c44a0ed3e100f4dd0940a4ddb8]
+2021-10-24 23:54:15,077 DEBUG    root            Skipping file [./.git/objects/2d/ba17d116a37846ca1842253c07fe0d64529ac2]
+2021-10-24 23:54:15,078 DEBUG    root            Skipping file [./.git/objects/84/ac8823e25570e1d8d8f816b58066c50d58af74]
+2021-10-24 23:54:15,079 DEBUG    root            Skipping file [./.git/objects/84/2cfd36f5f20a4ca97a16c79f52fc24ea1e1036]
+2021-10-24 23:54:15,080 DEBUG    root            Skipping file [./.git/objects/85/f36d076c011998c9ba0400d397414e9f867978]
+2021-10-24 23:54:15,081 DEBUG    root            Skipping file [./.git/objects/2e/8deded3b0251332ed9d96fc4fbe314cb2a8319]
+2021-10-24 23:54:15,082 DEBUG    root            Skipping file [./.git/objects/13/b3cceeaae9e5c5179c34d4f52682bdad729259]
+2021-10-24 23:54:15,083 DEBUG    root            Skipping file [./.git/objects/8e/f5100b6404f54917238a94f6d5844d6cd8b734]
+2021-10-24 23:54:15,084 DEBUG    root            Skipping file [./.git/info/exclude]
+2021-10-24 23:54:15,085 DEBUG    root            Skipping file [./.git/logs/HEAD]
+2021-10-24 23:54:15,086 DEBUG    root            Skipping file [./.git/logs/refs/heads/main]
+2021-10-24 23:54:15,087 DEBUG    root            Skipping file [./.git/logs/refs/remotes/origin/main]
+2021-10-24 23:54:15,088 DEBUG    root            Skipping file [./.git/hooks/commit-msg.sample]
+2021-10-24 23:54:15,089 DEBUG    root            Skipping file [./.git/hooks/pre-rebase.sample]
+2021-10-24 23:54:15,089 DEBUG    root            Skipping file [./.git/hooks/pre-commit.sample]
+2021-10-24 23:54:15,091 DEBUG    root            Skipping file [./.git/hooks/prepare-commit-msg]
+2021-10-24 23:54:15,091 DEBUG    root            Skipping file [./.git/hooks/applypatch-msg.sample]
+2021-10-24 23:54:15,092 DEBUG    root            Skipping file [./.git/hooks/fsmonitor-watchman.sample]
+2021-10-24 23:54:15,093 DEBUG    root            Skipping file [./.git/hooks/pre-receive.sample]
+2021-10-24 23:54:15,094 DEBUG    root            Skipping file [./.git/hooks/prepare-commit-msg.sample]
+2021-10-24 23:54:15,095 DEBUG    root            Skipping file [./.git/hooks/post-update.sample]
+2021-10-24 23:54:15,096 DEBUG    root            Skipping file [./.git/hooks/pre-merge-commit.sample]
+2021-10-24 23:54:15,097 DEBUG    root            Skipping file [./.git/hooks/pre-applypatch.sample]
+2021-10-24 23:54:15,098 DEBUG    root            Skipping file [./.git/hooks/pre-push.sample]
+2021-10-24 23:54:15,099 DEBUG    root            Skipping file [./.git/hooks/update.sample]
+2021-10-24 23:54:15,099 DEBUG    root            Skipping file [./.git/hooks/push-to-checkout.sample]
+2021-10-24 23:54:15,100 DEBUG    root            Skipping file [./.git/refs/heads/main]
+2021-10-24 23:54:15,101 DEBUG    root            Skipping file [./.git/refs/remotes/origin/main]
+2021-10-24 23:54:15,103 DEBUG    root            Skipping file [./.vscode/settings.json]
+2021-10-24 23:54:15,103 DEBUG    root            Skipping file [./.vscode/configurationCache.log]
+2021-10-24 23:54:15,104 DEBUG    root            Skipping file [./.vscode/dryrun.log]
+2021-10-24 23:54:15,105 DEBUG    root            Skipping file [./.vscode/targets.log]
+2021-10-24 23:54:15,107 INFO     root            Using ignore file at [./.gcloudignore].
+2021-10-24 23:54:15,113 DEBUG    root            Skipping file [./.gitignore]
+2021-10-24 23:54:15,114 DEBUG    root            Skipping file [./.env]
+2021-10-24 23:54:15,116 DEBUG    root            Skipping file [./.gcloudignore]
+2021-10-24 23:54:15,122 DEBUG    root            Skipping file [ableef/__pycache__/__init__.cpython-38.pyc]
+2021-10-24 23:54:15,123 DEBUG    root            Skipping file [ableef/__pycache__/lib.cpython-38.pyc]
+2021-10-24 23:54:15,125 DEBUG    root            Skipping file [.pytest_cache/CACHEDIR.TAG]
+2021-10-24 23:54:15,125 DEBUG    root            Skipping file [.pytest_cache/README.md]
+2021-10-24 23:54:15,126 DEBUG    root            Skipping file [.pytest_cache/.gitignore]
+2021-10-24 23:54:15,127 DEBUG    root            Skipping file [.pytest_cache/v]
+2021-10-24 23:54:15,127 DEBUG    root            Skipping file [.pytest_cache/v/cache]
+2021-10-24 23:54:15,132 DEBUG    root            Skipping file [tests/__pycache__/__init__.cpython-38.pyc]
+2021-10-24 23:54:15,133 DEBUG    root            Skipping file [tests/__pycache__/test_ableef.cpython-38-pytest-5.4.3.pyc]
+2021-10-24 23:54:15,134 DEBUG    root            Skipping file [tests/__pycache__/conftest.cpython-38-pytest-5.4.3.pyc]
+2021-10-24 23:54:15,135 DEBUG    root            Skipping file [.git]
+2021-10-24 23:54:15,135 DEBUG    root            Skipping file [.git/objects]
+2021-10-24 23:54:15,136 DEBUG    root            Skipping file [.git/objects/61]
+2021-10-24 23:54:15,137 DEBUG    root            Skipping file [.git/objects/50]
+2021-10-24 23:54:15,137 DEBUG    root            Skipping file [.git/objects/03]
+2021-10-24 23:54:15,138 DEBUG    root            Skipping file [.git/objects/69]
+2021-10-24 23:54:15,138 DEBUG    root            Skipping file [.git/objects/3c]
+2021-10-24 23:54:15,139 DEBUG    root            Skipping file [.git/objects/56]
+2021-10-24 23:54:15,140 DEBUG    root            Skipping file [.git/objects/3d]
+2021-10-24 23:54:15,140 DEBUG    root            Skipping file [.git/objects/9d]
+2021-10-24 23:54:15,141 DEBUG    root            Skipping file [.git/objects/bb]
+2021-10-24 23:54:15,141 DEBUG    root            Skipping file [.git/objects/df]
+2021-10-24 23:54:15,142 DEBUG    root            Skipping file [.git/objects/a2]
+2021-10-24 23:54:15,143 DEBUG    root            Skipping file [.git/objects/bd]
+2021-10-24 23:54:15,143 DEBUG    root            Skipping file [.git/objects/d6]
+2021-10-24 23:54:15,144 DEBUG    root            Skipping file [.git/objects/bc]
+2021-10-24 23:54:15,145 DEBUG    root            Skipping file [.git/objects/ae]
+2021-10-24 23:54:15,145 DEBUG    root            Skipping file [.git/objects/d8]
+2021-10-24 23:54:15,146 DEBUG    root            Skipping file [.git/objects/e2]
+2021-10-24 23:54:15,146 DEBUG    root            Skipping file [.git/objects/ee]
+2021-10-24 23:54:15,147 DEBUG    root            Skipping file [.git/objects/f2]
+2021-10-24 23:54:15,148 DEBUG    root            Skipping file [.git/objects/e3]
+2021-10-24 23:54:15,148 DEBUG    root            Skipping file [.git/objects/ca]
+2021-10-24 23:54:15,149 DEBUG    root            Skipping file [.git/objects/e4]
+2021-10-24 23:54:15,150 DEBUG    root            Skipping file [.git/objects/pack]
+2021-10-24 23:54:15,151 DEBUG    root            Skipping file [.git/objects/16]
+2021-10-24 23:54:15,152 DEBUG    root            Skipping file [.git/objects/89]
+2021-10-24 23:54:15,152 DEBUG    root            Skipping file [.git/objects/87]
+2021-10-24 23:54:15,153 DEBUG    root            Skipping file [.git/objects/8f]
+2021-10-24 23:54:15,154 DEBUG    root            Skipping file [.git/objects/19]
+2021-10-24 23:54:15,154 DEBUG    root            Skipping file [.git/objects/4c]
+2021-10-24 23:54:15,155 DEBUG    root            Skipping file [.git/objects/21]
+2021-10-24 23:54:15,155 DEBUG    root            Skipping file [.git/objects/86]
+2021-10-24 23:54:15,156 DEBUG    root            Skipping file [.git/objects/44]
+2021-10-24 23:54:15,157 DEBUG    root            Skipping file [.git/objects/2f]
+2021-10-24 23:54:15,157 DEBUG    root            Skipping file [.git/objects/43]
+2021-10-24 23:54:15,158 DEBUG    root            Skipping file [.git/objects/38]
+2021-10-24 23:54:15,159 DEBUG    root            Skipping file [.git/objects/info]
+2021-10-24 23:54:15,159 DEBUG    root            Skipping file [.git/objects/62]
+2021-10-24 23:54:15,160 DEBUG    root            Skipping file [.git/objects/5e]
+2021-10-24 23:54:15,160 DEBUG    root            Skipping file [.git/objects/39]
+2021-10-24 23:54:15,161 DEBUG    root            Skipping file [.git/objects/63]
+2021-10-24 23:54:15,162 DEBUG    root            Skipping file [.git/objects/b8]
+2021-10-24 23:54:15,162 DEBUG    root            Skipping file [.git/objects/dd]
+2021-10-24 23:54:15,163 DEBUG    root            Skipping file [.git/objects/b7]
+2021-10-24 23:54:15,163 DEBUG    root            Skipping file [.git/objects/db]
+2021-10-24 23:54:15,164 DEBUG    root            Skipping file [.git/objects/a1]
+2021-10-24 23:54:15,164 DEBUG    root            Skipping file [.git/objects/e1]
+2021-10-24 23:54:15,165 DEBUG    root            Skipping file [.git/objects/e6]
+2021-10-24 23:54:15,166 DEBUG    root            Skipping file [.git/objects/e8]
+2021-10-24 23:54:15,166 DEBUG    root            Skipping file [.git/objects/c5]
+2021-10-24 23:54:15,167 DEBUG    root            Skipping file [.git/objects/e9]
+2021-10-24 23:54:15,167 DEBUG    root            Skipping file [.git/objects/e7]
+2021-10-24 23:54:15,168 DEBUG    root            Skipping file [.git/objects/cb]
+2021-10-24 23:54:15,169 DEBUG    root            Skipping file [.git/objects/46]
+2021-10-24 23:54:15,169 DEBUG    root            Skipping file [.git/objects/2c]
+2021-10-24 23:54:15,170 DEBUG    root            Skipping file [.git/objects/2d]
+2021-10-24 23:54:15,170 DEBUG    root            Skipping file [.git/objects/84]
+2021-10-24 23:54:15,171 DEBUG    root            Skipping file [.git/objects/85]
+2021-10-24 23:54:15,171 DEBUG    root            Skipping file [.git/objects/2e]
+2021-10-24 23:54:15,172 DEBUG    root            Skipping file [.git/objects/13]
+2021-10-24 23:54:15,173 DEBUG    root            Skipping file [.git/objects/8e]
+2021-10-24 23:54:15,173 DEBUG    root            Skipping file [.git/info]
+2021-10-24 23:54:15,174 DEBUG    root            Skipping file [.git/logs]
+2021-10-24 23:54:15,175 DEBUG    root            Skipping file [.git/logs/refs]
+2021-10-24 23:54:15,176 DEBUG    root            Skipping file [.git/logs/refs/heads]
+2021-10-24 23:54:15,177 DEBUG    root            Skipping file [.git/logs/refs/remotes]
+2021-10-24 23:54:15,178 DEBUG    root            Skipping file [.git/logs/refs/remotes/origin]
+2021-10-24 23:54:15,178 DEBUG    root            Skipping file [.git/hooks]
+2021-10-24 23:54:15,179 DEBUG    root            Skipping file [.git/refs]
+2021-10-24 23:54:15,180 DEBUG    root            Skipping file [.git/refs/heads]
+2021-10-24 23:54:15,180 DEBUG    root            Skipping file [.git/refs/tags]
+2021-10-24 23:54:15,181 DEBUG    root            Skipping file [.git/refs/remotes]
+2021-10-24 23:54:15,182 DEBUG    root            Skipping file [.git/refs/remotes/origin]
+2021-10-24 23:54:15,183 DEBUG    root            Skipping file [.vscode/settings.json]
+2021-10-24 23:54:15,184 DEBUG    root            Skipping file [.vscode/configurationCache.log]
+2021-10-24 23:54:15,184 DEBUG    root            Skipping file [.vscode/dryrun.log]
+2021-10-24 23:54:15,185 DEBUG    root            Skipping file [.vscode/targets.log]
+2021-10-24 23:54:15,194 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:54:17,123 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "POST /v1/projects/bleeeeeefing/locations/asia-northeast1/functions:generateUploadUrl?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:17,154 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-10-24 23:54:17,378 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /gcf-upload-asia-northeast1-59ec7191-8a04-4bd0-a503-aa7afcef316f/054f41b7-8721-42c6-acc4-32ba69f5ab58.zip?GoogleAccessId=service-511598790723%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1635089056&Signature=2j7kqvb1VC8Q%2Bxgysa%2F4aGtngS3%2BT2LysHSySdU31ZkIG4H9tL0FS4mxdJSQct4Qqcze3%2BRcAwoG%2B1gDd3jtD3GiCGczwtVQ6DR1IBVcNgJ%2FEjScf6WaMiMXTKXJ2qAmVsHuf67aghP5%2B%2B%2Fx%2BIu3sahorCnileexylKpJnIQHw2We340LrCwjsMCS8jOnW0T4%2FOT%2BGPNKc9%2BzCQWhQaiFnCX3QEgyZlvJyQ0AhEpC%2BgXtb9JtSMpVo1myqBuu4017fJLZ7ibk7jxCk0c1lhWnqeyY8dnGObCHuJVP0cbmAWLIvsX%2FPOItfxYsVf0rBSVwsp%2FBAGdpFNTqo80cWvvxw%3D%3D HTTP/1.1" 200 0
+2021-10-24 23:54:17,406 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:54:18,619 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "PATCH /v1/projects/bleeeeeefing/locations/asia-northeast1/functions/trigger?alt=json&updateMask=eventTrigger%2ChttpsTrigger%2Cruntime%2CsourceUploadUrl HTTP/1.1" 200 None
+2021-10-24 23:54:18,632 INFO     ___FILE_ONLY___ Deploying function (may take a while - up to 2 minutes)...
+2021-10-24 23:54:18,637 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2021-10-24 23:54:19,151 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:19,162 INFO     ___FILE_ONLY___ 
+For Cloud Build Logs, visit: https://console.cloud.google.com/cloud-build/builds;region=asia-northeast1/e9c3075f-9386-466d-bb74-866f9f6fc044?project=511598790723
+
+2021-10-24 23:54:21,487 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:23,634 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:25,908 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:27,855 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:29,311 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:31,407 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:33,383 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:34,738 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:36,663 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:38,606 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:40,594 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:42,008 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:43,681 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:45,262 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:47,719 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:49,461 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:51,815 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:54,015 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:55,675 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:57,754 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:54:59,863 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:01,152 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:03,285 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:05,668 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:07,315 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:09,534 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:11,407 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:13,490 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:15,411 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:17,053 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:18,645 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:20,009 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:21,790 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:23,647 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:25,607 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:27,515 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:28,987 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:30,477 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:32,120 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:33,575 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:35,521 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:37,064 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:39,336 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:41,318 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:43,263 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:45,234 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:47,346 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:49,059 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:51,034 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:52,950 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:54,336 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:56,427 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:55:58,069 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:56:00,221 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:56:02,370 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:56:03,804 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:56:05,136 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:56:07,196 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/operations/YmxlZWVlZWVmaW5nL2FzaWEtbm9ydGhlYXN0MS90cmlnZ2VyL0E2LTRjMUhRNGJj?alt=json HTTP/1.1" 200 None
+2021-10-24 23:56:07,202 DEBUG    root            (gcloud.functions.deploy) OperationError: code=3, message=Build failed: missing main.py and GOOGLE_FUNCTION_SOURCE not specified. Either create the function in main.py or specify GOOGLE_FUNCTION_SOURCE to point to the file that contains the function; Error ID: 5c04ec9c
+Traceback (most recent call last):
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 809, in Run
+    resources = command_instance.Run(args)
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/surface/functions/deploy.py", line 83, in Run
+    return command_v1.Run(args, track=self.ReleaseTrack())
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/command_lib/functions/v1/deploy/command.py", line 518, in Run
+    api_util.WaitForFunctionUpdateOperation(
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/functions/v1/util.py", line 388, in CatchHTTPErrorRaiseHTTPExceptionFn
+    return func(*args, **kwargs)
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/functions/v1/util.py", line 438, in WaitForFunctionUpdateOperation
+    operations.Wait(op, client.MESSAGES_MODULE, client, _DEPLOY_WAIT_NOTICE,
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/functions/v1/operations.py", line 150, in Wait
+    _WaitForOperation(client, request, notice, try_set_invoker,
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/functions/v1/operations.py", line 113, in _WaitForOperation
+    retryer.RetryOnResult(_GetOperationStatus,
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 239, in RetryOnResult
+    result = func(*args, **kwargs)
+  File "/Users/katsuya2019/Downloads/google-cloud-sdk/lib/googlecloudsdk/api_lib/functions/v1/operations.py", line 73, in _GetOperationStatus
+    raise exceptions.FunctionsError(OperationErrorToString(op.error))
+googlecloudsdk.api_lib.functions.v1.exceptions.FunctionsError: OperationError: code=3, message=Build failed: missing main.py and GOOGLE_FUNCTION_SOURCE not specified. Either create the function in main.py or specify GOOGLE_FUNCTION_SOURCE to point to the file that contains the function; Error ID: 5c04ec9c
+2021-10-24 23:56:07,205 ERROR    root            (gcloud.functions.deploy) OperationError: code=3, message=Build failed: missing main.py and GOOGLE_FUNCTION_SOURCE not specified. Either create the function in main.py or specify GOOGLE_FUNCTION_SOURCE to point to the file that contains the function; Error ID: 5c04ec9c
+2021-10-24 23:56:07,237 DEBUG    root            Metrics reporting process started...
