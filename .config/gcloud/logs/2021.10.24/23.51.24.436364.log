@@ -1,8 +1,0 @@
-2021-10-24 23:51:24,438 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
-2021-10-24 23:51:24,497 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
-2021-10-24 23:51:24,514 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--region: "asia-northeast1", --runtime: "python38", --trigger-topic: "daily-bleeeeeefing-topic", NAME: "trigger"]
-2021-10-24 23:51:24,534 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
-2021-10-24 23:51:25,173 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v1/projects/bleeeeeefing/locations/asia-northeast1/functions/trigger?alt=json HTTP/1.1" 200 None
-2021-10-24 23:51:25,184 INFO     root            Not using ignore file.
-2021-10-24 23:51:25,184 INFO     root            Not using ignore file.
-2021-10-24 23:51:25,202 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
