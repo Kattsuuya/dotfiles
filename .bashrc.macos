@@ -1,0 +1,16 @@
+# bashでコマンドのオプションを補完する
+if [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]]; then
+    . "/usr/local/etc/profile.d/bash_completion.sh"
+fi
+
+export SOURCEKIT_TOOLCHAIN_PATH="/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2019-08-05-a.xctoolchain/usr/bin/swift"
+
+# Google Cloud SDK
+if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc' ]; then
+    . '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc' ]; then
+    . '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc'
+fi

@@ -124,9 +124,9 @@ fi
 ##
 #######################################################################
 
-# bashでコマンドのオプションを補完する
-if [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]]; then
-    . "/usr/local/etc/profile.d/bash_completion.sh"
+# macOSの設定
+if [ "$(uname)" == 'Darwin' ]; then
+    . "$HOME/.bashrc.macos"
 fi
 
 # syssec-leoの設定
@@ -135,8 +135,6 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 export PATH="/usr/local/opt/qemu/bin:$PATH"
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
-
-export SOURCEKIT_TOOLCHAIN_PATH="/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2019-08-05-a.xctoolchain/usr/bin/swift"
 
 # Rust
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -180,24 +178,9 @@ if type oh-my-posh > /dev/null 2>&1; then
     eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)"
 fi
 
-# Zoxide
-if type zoxide > /dev/null 2>&1; then
-    eval "$(zoxide init bash)"
-fi
-
 # McFly
 if type mcfly > /dev/null 2>&1; then
     eval "$(mcfly init bash)"
-fi
-
-# Google Cloud SDK
-if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc' ]; then
-    . '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc' ]; then
-    . '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc'
 fi
 
 # NVM（Node Version Manager）
