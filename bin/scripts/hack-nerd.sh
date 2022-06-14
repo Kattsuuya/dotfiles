@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo apt install fonts-hack-ttf
+sudo apt install -y fonts-hack-ttf
