@@ -309,5 +309,6 @@
   "terminal.integrated.fontFamily": "\"Hack Nerd Font\"",
   "bracket-pair-colorizer-2.depreciation-notice": false,
   "editor.fontFamily": "'Hack Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "redhat.telemetry.enabled": true
+  "redhat.telemetry.enabled": true,
+  "terminal.integrated.allowChords": false
 }
