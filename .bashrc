@@ -177,7 +177,7 @@ fi
 
 # Oh My Posh
 if type oh-my-posh > /dev/null 2>&1; then
-    eval "$(oh-my-posh --init --shell bash --config ~/.themes/paradox.omp.json)"
+    eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/paradox.omp.json)"
 fi
 
 # Zoxide
