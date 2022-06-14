@@ -1,5 +1,4 @@
 alias x='exit'
-alias ls='exa'
 alias ll='ls -lah'
 alias lsold='ls -lrt'
 alias lsnew='ls -lt'

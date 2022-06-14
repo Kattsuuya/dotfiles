@@ -35,11 +35,7 @@
   "[markdown]": {
     "editor.tabSize": 2,
     "files.encoding": "utf8",
-    <<
-    << << < Updated upstream "editor.defaultFormatter": "yzhang.markdown-all-in-one" ===
-      === =
-      "editor.defaultFormatter": "esbenp.prettier-vscode" >>>
-      >>> > Stashed changes
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[plaintext]": {},
   "[python]": {
