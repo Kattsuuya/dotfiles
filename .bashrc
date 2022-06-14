@@ -120,9 +120,9 @@ fi
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # starship(コマンドプロンプトの設定)
-# if type "starship" > /dev/null 2>&1; then
-#     eval "$(starship init bash)"
-# fi
+#if type "starship" > /dev/null 2>&1; then
+#    eval "$(starship init bash)"
+#fi
 
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
@@ -141,8 +141,6 @@ if [[ -d ~/.rbenv  ]] ; then
     export PATH="$HOME/.rbenv/bin:$PATH"
     eval "$(rbenv init -)"
 fi
-
-export PATH="$HOME/.nodebrew/current/bin:$PATH"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -183,7 +181,7 @@ if [ -d "$HOME/tools/beaengine/lib/Linux.gnu.Debug" ]; then
 fi
 
 # Oh My Posh
-eval "$(oh-my-posh --init --shell bash --config `brew --prefix oh-my-posh`/themes/paradox.omp.json)"
+eval "$(oh-my-posh --init --shell bash --config ~/.themes/paradox.omp.json)"
 
 # Zoxide
 eval "$(zoxide init bash)"
@@ -191,9 +189,12 @@ eval "$(zoxide init bash)"
 # McFly
 eval "$(mcfly init bash)"
 
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -35,7 +35,11 @@
   "[markdown]": {
     "editor.tabSize": 2,
     "files.encoding": "utf8",
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    <<
+    << << < Updated upstream "editor.defaultFormatter": "yzhang.markdown-all-in-one" ===
+      === =
+      "editor.defaultFormatter": "esbenp.prettier-vscode" >>>
+      >>> > Stashed changes
   },
   "[plaintext]": {},
   "[python]": {
@@ -308,4 +312,6 @@
   "python.linting.mypyEnabled": true,
   "terminal.integrated.fontFamily": "\"Hack Nerd Font\"",
   "bracket-pair-colorizer-2.depreciation-notice": false,
+  "editor.fontFamily": "'Hack Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "redhat.telemetry.enabled": true
 }
