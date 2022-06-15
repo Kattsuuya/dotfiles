@@ -476,11 +476,11 @@ dotfiles_download() {
                 wget -O - "$tarball"
 
             fi | tar xvz
-            if [ ! -d dotfiles-master ]; then
-                log_fail "dotfiles-master: not found"
+            if [ ! -d dotfiles-main ]; then
+                log_fail "dotfiles-main: not found"
                 exit 1
             fi
-            command mv -f dotfiles-master "$DOTPATH"
+            command mv -f dotfiles-main "$DOTPATH"
 
         else
             log_fail "curl or wget required"
