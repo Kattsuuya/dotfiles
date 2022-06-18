@@ -38,3 +38,6 @@ clean:
 	@echo 'Remove dot files in your home directory...'
 	@-$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
 	-rm -rf $(DOTPATH)
+
+opt:
+	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/bin/all-opt-script.sh
