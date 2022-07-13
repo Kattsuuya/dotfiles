@@ -191,3 +191,4 @@ fi
 if [ -s "$NVM_DIR/bash_completion" ]; then
     \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
+
