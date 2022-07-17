@@ -310,5 +310,6 @@
   "bracket-pair-colorizer-2.depreciation-notice": false,
   "editor.fontFamily": "'Hack Nerd Font', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "redhat.telemetry.enabled": true,
-  "terminal.integrated.allowChords": false
+  "terminal.integrated.allowChords": false,
+  "cSpell.enabled": false
 }

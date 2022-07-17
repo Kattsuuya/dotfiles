@@ -169,7 +169,7 @@ if [ -d "$HOME/.goenv" ] ; then
     export GOENV_ROOT="$HOME/.goenv"
     export PATH="$GOENV_ROOT/bin:$PATH"
     eval "$(goenv init -)"
-    export PATH="$GOROOT/bin/$PATH"
+    export PATH="$GOROOT/bin:$PATH"
     export PATH="$PATH:$GOPATH/bin"
 fi
 
@@ -191,4 +191,3 @@ fi
 if [ -s "$NVM_DIR/bash_completion" ]; then
     \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
-
