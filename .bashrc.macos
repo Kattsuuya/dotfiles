@@ -3,14 +3,18 @@ if [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]]; then
     . "/usr/local/etc/profile.d/bash_completion.sh"
 fi
 
-export SOURCEKIT_TOOLCHAIN_PATH="/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2019-08-05-a.xctoolchain/usr/bin/swift"
+# HOMEBREW
+export PATH="$PATH:/opt/homebrew/bin"
 
-# Google Cloud SDK
-if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc' ]; then
-    . '/Users/katsuya2019/Downloads/google-cloud-sdk/path.bash.inc'
+# Oh My Posh
+if type oh-my-posh > /dev/null 2>&1; then
+    eval "$(oh-my-posh init bash --config $(brew --prefix oh-my-posh)/themes/paradox.omp.json)"
 fi
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc' ]; then
-    . '/Users/katsuya2019/Downloads/google-cloud-sdk/completion.bash.inc'
-fi
+# Java
+export JAVA_HOME="/opt/homebrew/opt/openjdk@11"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+# MySQL
+export PATH="/usr/local/mysql/bin:$PATH"
+
